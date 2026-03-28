@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Zone Employé</title>
+</head>
+<body>
+<h2>Espace Employé</h2>
+<p>Ressources accessibles aux employés et managers.</p>
+<form th:action="@{/log-off}" method="post">
+    <button type="submit">Quitter la session</button>
+</form>
+</body>
+</html>

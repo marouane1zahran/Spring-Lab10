@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Portail Principal</title>
+</head>
+<body>
+<h1>Bienvenue sur votre session</h1>
+<p>Veuillez sélectionner votre portail de destination :</p>
+<ul>
+    <li><a th:href="@{/employee/panel}">Portail Employé</a></li>
+    <li><a th:href="@{/manager/panel}">Portail Manager</a></li>
+</ul>
+<form th:action="@{/log-off}" method="post">
+    <button type="submit">Quitter la session</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Zone Manager</title>
+</head>
+<body>
+<h2>Administration - Manager</h2>
+<p>Contenu exclusif aux utilisateurs avec les droits MANAGER.</p>
+<form th:action="@{/log-off}" method="post">
+    <button type="submit">Quitter la session</button>
+</form>
+</body>
+</html>
